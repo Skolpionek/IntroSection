@@ -3,12 +3,13 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50px;
+  height: 100px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 20px;
   color: dimgray;
+  font-size: 30px;
 }
 
 nav .nav-left {
@@ -21,10 +22,11 @@ nav .nav-left {
 }
 
 nav .nav-left .logo {
-  height: 20px;
+  height: 35px;
+  margin: 0 15px;
 }
 
-nav .nav-left ul {
+nav .nav-left .nav-items-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,9 +40,69 @@ nav .nav-left ul {
           justify-content: flex-start;
 }
 
-nav .nav-left ul li {
+nav .nav-left .nav-items-container .nav-item {
+  padding: 0 10px;
   list-style: none;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+nav .nav-left .nav-items-container .nav-item:hover {
+  color: #141414;
+}
+
+nav .nav-left .nav-items-container .features:hover .features-content {
+  display: block;
+}
+
+nav .nav-left .nav-items-container .company:hover .company-content {
+  display: block;
+}
+
+nav .nav-left .nav-items-container .dropdown {
+  position: relative;
+  margin-right: 20px;
+}
+
+nav .nav-left .nav-items-container .dropdown::after {
+  content: "";
+  background-image: url(../../images/icon-arrow-down.svg);
+  height: 10px;
+  width: 10px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: -20px;
+  top: 22px;
+}
+
+nav .nav-left .nav-items-container .dropdown:hover::after {
+  background-image: url(../../images/icon-arrow-up.svg) !important;
+  color: black !important;
+}
+
+nav .nav-left .nav-items-container .dropdown ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 100px -37px #42445a;
+          box-shadow: 0px 0px 100px -37px #42445a;
+  width: 200px;
+  right: -20px;
+  border-radius: 10px;
+}
+
+nav .nav-left .nav-items-container .dropdown ul li {
+  list-style: none;
+  color: dimgray;
+}
+
+nav .nav-left .nav-items-container .dropdown ul li:hover {
+  color: inherit;
+}
+
+nav .nav-left .nav-items-container .dropdown .company-content {
+  left: 0;
 }
 
 nav .nav-right {
@@ -50,6 +112,7 @@ nav .nav-right {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 15px;
 }
 
 nav .nav-right .login {
@@ -57,7 +120,8 @@ nav .nav-right .login {
   color: dimgray;
   border: 0;
   cursor: pointer;
-  padding: 0 25px;
+  padding: 0 45px;
+  font-size: 30px;
 }
 
 nav .nav-right .login:hover {
@@ -70,6 +134,7 @@ nav .nav-right .register {
   background-color: transparent;
   border-radius: 10px;
   padding: 2px 20px;
+  font-size: 30px;
   cursor: pointer;
 }
 
