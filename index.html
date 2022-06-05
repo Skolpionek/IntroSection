@@ -2,38 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./CSS/style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <nav>
+    <img src="/images/logo.svg" alt="logo">
+    <ul>
+      <li>Features</li>
+      <li>Company</li>
+      <li>Careers</li>
+      <li>About</li>
+    </ul>
+    <button class="login">Login</button>
+    <button class="register">Register</button>
+  </nav>
+  <header>
+    <div class="left">
+      <h1 class="title">
+        Make remote work
+      </h1>
+      <p class="subTitle">
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+      <button class="learMore">Learn more</button>
+      <div class="clients">
+        <img src="./images/client-databiz.svg" alt="client databiz">
+        <img src="./images/client-audiophile.svg" alt="client audiophile">
+        <img src="./images/client-meet.svg" alt="client meet">
+        <img src="./images/client-maker.svg" alt="client maker">
+      </div>
+    </div>
+    <img class="right" src="./images/image-hero-desktop.png" alt="">
+  </header>
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
 </html>
