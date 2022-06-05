@@ -24,6 +24,7 @@ nav .nav-left {
 nav .nav-left .logo {
   height: 35px;
   margin: 0 15px;
+  margin-top: 10px;
 }
 
 nav .nav-left .nav-items-container {
@@ -43,7 +44,6 @@ nav .nav-left .nav-items-container {
 nav .nav-left .nav-items-container .nav-item {
   padding: 0 10px;
   list-style: none;
-  margin-bottom: 10px;
   cursor: pointer;
 }
 
@@ -132,7 +132,7 @@ nav .nav-right .register {
   border: 2px solid dimgray;
   color: dimgray;
   background-color: transparent;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 2px 20px;
   font-size: 30px;
   cursor: pointer;
@@ -141,6 +141,73 @@ nav .nav-right .register {
 nav .nav-right .register:hover {
   color: #141414;
   border: 2px solid #141414;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .left {
+  margin-top: 130px;
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .left .title {
+  color: #141414;
+  font-size: 120px;
+  line-height: 1;
+  margin: 0;
+}
+
+header .left .subTitle {
+  color: dimgray;
+  width: 80%;
+  font-size: 25px;
+  line-height: 1.3;
+  margin: 80px 0;
+}
+
+header .left .learnMore {
+  background-color: #141414;
+  color: #fafafa;
+  padding: 10px;
+  width: 200px;
+  border-radius: 12px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+header .left .learnMore:hover {
+  background-color: #fafafa;
+  color: #141414;
+}
+
+header .left .clients {
+  margin: 140px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+}
+
+header .right {
+  width: 700px;
 }
 
 * {

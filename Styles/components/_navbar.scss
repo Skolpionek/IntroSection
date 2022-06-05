@@ -13,6 +13,7 @@ nav{
       .logo{
          height: 35px;
          margin: 0 15px;
+         margin-top: 10px;
       }
       .nav-items-container{
          display: flex;
@@ -23,7 +24,7 @@ nav{
          .nav-item{
             padding: 0 10px;
             list-style: none;
-            margin-bottom: 10px;
+            
             cursor: pointer;
             &:hover{
                color: $primary;
@@ -95,7 +96,7 @@ nav{
          border: 2px solid $MediumGray;
          color: $MediumGray;
          background-color: transparent;
-         border-radius: 10px;
+         border-radius: 20px;
          padding: 2px 20px;
          font-size: 30px;
          cursor: pointer;
