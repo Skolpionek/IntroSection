@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap");
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7,10 +8,7 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 20px;
-}
-
-nav .logo {
-  height: 20px;
+  color: dimgray;
 }
 
 nav .nav-left {
@@ -22,16 +20,11 @@ nav .nav-left {
           align-items: center;
 }
 
-nav .nav-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+nav .nav-left .logo {
+  height: 20px;
 }
 
-nav ul {
+nav .nav-left ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,9 +38,48 @@ nav ul {
           justify-content: flex-start;
 }
 
-nav ul li {
+nav .nav-left ul li {
   list-style: none;
   margin-bottom: 5px;
+}
+
+nav .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-right .login {
+  background-color: transparent;
+  color: dimgray;
+  border: 0;
+  cursor: pointer;
+  padding: 0 25px;
+}
+
+nav .nav-right .login:hover {
+  color: #141414;
+}
+
+nav .nav-right .register {
+  border: 2px solid dimgray;
+  color: dimgray;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 2px 20px;
+  cursor: pointer;
+}
+
+nav .nav-right .register:hover {
+  color: #141414;
+  border: 2px solid #141414;
+}
+
+* {
+  font-family: "Changa", sans-serif;
 }
 
 .attribution {
