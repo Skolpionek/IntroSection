@@ -63,9 +63,11 @@ nav{
                width: 200px;
                right: -20px;
                border-radius: 10px;
+               padding: 30px;
                li{
                   list-style: none;
                   color: $MediumGray;
+                  text-align: left;
                   &:hover{
                      color: inherit;
                   }

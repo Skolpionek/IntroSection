@@ -90,11 +90,13 @@ nav .nav-left .nav-items-container .dropdown ul {
   width: 200px;
   right: -20px;
   border-radius: 10px;
+  padding: 30px;
 }
 
 nav .nav-left .nav-items-container .dropdown ul li {
   list-style: none;
   color: dimgray;
+  text-align: left;
 }
 
 nav .nav-left .nav-items-container .dropdown ul li:hover {
@@ -210,16 +212,17 @@ header .right {
   width: 700px;
 }
 
-* {
-  font-family: "Changa", sans-serif;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 48px;
 }
 
 .attribution a {
   color: #3e52a3;
+}
+
+* {
+  font-family: "Changa", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
