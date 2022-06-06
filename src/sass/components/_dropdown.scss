@@ -1,0 +1,46 @@
+.features:hover .features-content{
+   display: block;
+}
+.company:hover .company-content{
+   display: block;
+}
+.dropdown{
+   position: relative;
+   margin-right: 20px;
+   &::after{
+      content: "";
+      background-image: url(../../assets/images/icon-arrow-down.svg);
+      height: 10px;
+      width: 10px;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      right: -20px;
+      top: 22px;
+   }
+   &:hover::after{
+      background-image: url(../../assets/images/icon-arrow-up.svg) !important;
+      color: black !important;
+   }
+   ul{
+      display: none;
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 0px 20px rgba(66, 68, 90, 1);
+      width: 150px;
+      right: -20px;
+      border-radius: 10px;
+      padding: 10px 30px;
+      li{
+         list-style: none;
+         color: $MediumGray;
+         text-align: left;
+         &:hover{
+            color: inherit;
+         }
+      }
+   }
+   .company-content{
+      left: 0;
+   }
+}
