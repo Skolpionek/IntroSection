@@ -46,3 +46,41 @@ header{
       }
    }
 }
+@media only screen and (max-width: 600px){
+   header{
+      .right{
+         margin: 0;
+         padding: 0;
+         .imgDesktop{
+            display: none;
+         }
+         .imgMobile{
+            display: block;
+            width: 100%;
+            
+         }
+      }
+      .left{
+         margin: 0;
+         padding: 0;
+         .title{
+            font-size: 70px;
+            text-align: center;
+            margin-top: 55px;
+         }
+         .subTitle{
+            text-align: center;
+            margin: 30px auto;
+         }
+         .learnMore{
+            display: block;
+            margin: auto   ;
+         }
+         .clients{
+            margin: 70px auto;
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+      }
+   }
+}

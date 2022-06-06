@@ -336,6 +336,41 @@ header .right .imgMobile {
   display: none;
 }
 
+@media only screen and (max-width: 600px) {
+  header .right {
+    margin: 0;
+    padding: 0;
+  }
+  header .right .imgDesktop {
+    display: none;
+  }
+  header .right .imgMobile {
+    display: block;
+    width: 100%;
+  }
+  header .left {
+    margin: 0;
+    padding: 0;
+  }
+  header .left .title {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 55px;
+  }
+  header .left .subTitle {
+    text-align: center;
+    margin: 30px auto;
+  }
+  header .left .learnMore {
+    display: block;
+    margin: auto;
+  }
+  header .left .clients {
+    margin: 70px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -353,4 +388,8 @@ header .right .imgMobile {
 
 html, body {
   overflow-x: hidden;
+}
+
+body {
+  position: relative;
 }
