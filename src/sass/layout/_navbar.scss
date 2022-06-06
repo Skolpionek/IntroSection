@@ -9,6 +9,12 @@ nav{
    padding: 0 20px;
    color: $MediumGray;
    font-size: 25px;
+   .mobileButtons{
+      display: none;
+   }
+   .menuIcon{
+      display: none;
+   }
    .nav-left{
       display: flex;
       align-items: center;
@@ -42,5 +48,69 @@ nav{
       gap: 15px;
       padding-right: 30px;
       @import '../components/buttons';
+   }
+}
+
+@media only screen and (max-width: 1050px){
+   nav{
+      font-size: 20px;
+      .nav-right{
+         display: none;
+      }
+      .menuIcon{
+         display: block;
+         background-image: url("../../assets/images/icon-menu.svg");
+         width: 40px;
+         height: 25px;
+         background-position: center;
+         background-size: cover;
+         margin: 20px 10px;
+         cursor: pointer;
+         z-index: 10;
+         right: 20px;
+      }
+      .mobileMenu{
+         display: block;
+         &.active{
+            width: 100vw;
+            height: 100vh;
+            left: 0;
+            bottom: 0;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.518);
+            display: block;
+         }
+         .nav-items-container{
+            flex-direction: column;
+            background-color: $background;
+            position: absolute !important;
+            height: 100%;
+            right: -100%;
+            transition: 0.5s;
+            top: 0;
+            padding-top:75px;
+            align-items: flex-start;
+            width: clamp(200px, 80vw, 400px);
+            .mobileButtons{
+               margin-right: 30px;
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: center;
+               gap: 15px;
+               @import '../components/buttons';
+               button{
+                  width: clamp(100px, 70vw, 300px);
+               }
+            }
+         }
+
+
+
+      }
+      .active{
+         .nav-items-container{
+            right: 0;
+         }
+      }
    }
 }

@@ -6,34 +6,49 @@
   <base href="/">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/script.js" defer></script>
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
   <nav>
     <div class="nav-left">
       <img src="./assets/images/logo.svg" alt="logo" class="logo">
-    <ul class="nav-items-container">
-      <li class="nav-item dropdown features">
-        Features
-        <ul class="features-content">
-          <li><img src="./assets/images/icon-todo.svg" alt=""> Todo List</li>
-          <li><img src="./assets/images/icon-calendar.svg" alt=""> Calendar</li>
-          <li><img src="./assets/images/icon-reminders.svg" alt=""> Reminders</li>
-          <li><img src="./assets/images/icon-planning.svg" alt=""> Planning</li>
+      
+      <div class="mobileMenu">
+        
+        <ul class="nav-items-container">
+          <li class="nav-item dropdown features">
+            <span>Features</span>
+            <ul class="features-content">
+              <li><img src="./assets/images/icon-todo.svg" alt=""> Todo List</li>
+              <li><img src="./assets/images/icon-calendar.svg" alt=""> Calendar</li>
+              <li><img src="./assets/images/icon-reminders.svg" alt=""> Reminders</li>
+              <li><img src="./assets/images/icon-planning.svg" alt=""> Planning</li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown company">
+            <span>Company</span> 
+            <ul class="company-content">
+              <li>History</li>
+              <li>Out Team</li>
+              <li>Blog</li>
+              <li>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">Careers</li>
+          <li class="nav-item">About</li>
+          <li class="nav-item">
+            <div class="mobileButtons">
+              <button class="login">Login</button>
+              <button class="register">Register</button>
+            </div>
+          </li>
         </ul>
-      </li>
-      <li class="nav-item dropdown company">
-        Company
-        <ul class="company-content">
-          <li>History</li>
-          <li>Out Team</li>
-          <li>Blog</li>
-        </ul>
-      </li>
-      <li class="nav-item">Careers</li>
-      <li class="nav-item">About</li>
-    </ul>
+      </div>
+    
     </div>
+    <div class="menuIcon"></div>
     <div class="nav-right">
       <button class="login">Login</button>
       <button class="register">Register</button>
@@ -57,7 +72,8 @@
       </div>
     </div>
     <div class="right">
-      <img src="./assets/images/image-hero-desktop.png" alt="">
+      <img class="imgDesktop" src="./assets/images/image-hero-desktop.png" alt="">
+      <img class="imgMobile" src="./assets/images/image-hero-mobile.png" alt="">
     </div>
     
   </header>
