@@ -1,0 +1,10 @@
+@import './res/fonts';
+
+@import './layout/navbar';
+@import './layout/header';
+@import './layout/footer';
+
+*{
+   font-family: $font;
+}
+
