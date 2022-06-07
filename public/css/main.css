@@ -388,8 +388,11 @@ header .right .imgMobile {
 
 html, body {
   overflow-x: hidden;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
   position: relative;
+  overflow-y: hidden;
 }
