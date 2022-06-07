@@ -7,9 +7,9 @@
    "homepage": ".",
    "scripts": {
      "build:sass": "sass  --no-source-map src/sass:public/css",
-     "copy:script": "copyfiles -u 1 ./src/js/*.js public",
-     "copy:assets": "copyfiles -u 1 ./src/assets/**/* public",
-     "copy:html": "copyfiles -u 1 ./src/*.html public",
+     "copy:script": "copyfiles -u 1 /src/js/*.js public",
+     "copy:assets": "copyfiles -u 1 /src/assets/**/* public",
+     "copy:html": "copyfiles -u 1 /src/*.html public",
      "copy": "npm-run-all --parallel copy:*",
      "watch:script": "onchange \"src/js/*.js\" -- npm run copy:script",
      "watch:assets": "onchange \"src/assets/**/*\" -- npm run copy:html",
